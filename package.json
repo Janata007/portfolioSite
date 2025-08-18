@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "@million/lint": "^1.0.14",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "craco start"
   },
   "browserslist": {
     "production": [
@@ -18,5 +19,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0"
   }
 }
