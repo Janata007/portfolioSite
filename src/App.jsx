@@ -1,17 +1,28 @@
 import React from "react";
+import { motion } from "motion/react";
 import Page from "./components/PropahMain/page";
 import ArtPage from "./components/PropahPages/artPage";
 import "./mystyle.css";
-import { sections } from "./PropahUtils/constants";
+import { sections, ball } from "./PropahUtils/constants";
 import ContactPage from "./components/PropahPages/contactPage";
 import ProjectsPage from "./components/PropahPages/projectsPage";
 
 const menus = ["home", "projects", "art", "contact"];
-
 const App = () => {
   return (
     <>
       <header>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
+          style={ball}
+        />
         <nav>
           <ul>
             {menus.map((menu, index) => (
