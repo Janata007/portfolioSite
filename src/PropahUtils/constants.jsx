@@ -4,10 +4,6 @@ export const sections = [
     subtitle: "Home section ",
   },
   {
-    title: "about",
-    subtitle: "About me section",
-  },
-  {
     title: "projects",
     subtitle: "My projects section",
   },
