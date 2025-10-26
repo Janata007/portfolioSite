@@ -29,19 +29,16 @@ const ArtPage = ({ section }) => {
         <div className="content">
           <div className="leftest-div">
             <motion.div whileHover={{ scale: 1.1 }}>
-              <h2>Projects:</h2>
+              <h2>Instagram:</h2>
               <ul className="pagedList">
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
+                <li>@emjoey_arts</li>
               </ul>
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }}>
               <h2>Tools:</h2>
               <ul className="pagedList">
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
+                <li>Krita</li>
+                <li>Photoshop</li>
               </ul>
             </motion.div>
           </div>
@@ -99,19 +96,15 @@ const ArtPage = ({ section }) => {
         </div>
         <div className="rightest-div">
           <motion.div whileHover={{ scale: 1.1 }}>
-            <h2>Projects:</h2>
+            <h2>Commissions</h2>
             <ul className="pagedList">
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
+              <li>open</li>
             </ul>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }}>
-            <h2>Tools:</h2>
+            <h2>Hotel</h2>
             <ul className="pagedList">
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
+              <li>Trivago</li>
             </ul>
           </motion.div>
         </div>
