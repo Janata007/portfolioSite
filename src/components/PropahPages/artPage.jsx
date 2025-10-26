@@ -28,18 +28,22 @@ const ArtPage = ({ section }) => {
       <section id={title}>
         <div className="content">
           <div className="leftest-div">
-            <h2>Projects:</h2>
-            <ul className="pagedList">
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
-            <h2>Tools:</h2>
-            <ul className="pagedList">
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <h2>Projects:</h2>
+              <ul className="pagedList">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+              </ul>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <h2>Tools:</h2>
+              <ul className="pagedList">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+              </ul>
+            </motion.div>
           </div>
           <div className="centered-div">
             <motion.div
@@ -94,18 +98,22 @@ const ArtPage = ({ section }) => {
           </div>
         </div>
         <div className="rightest-div">
-             <h2>Projects:</h2>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <h2>Projects:</h2>
             <ul className="pagedList">
               <li>one</li>
               <li>two</li>
               <li>three</li>
             </ul>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
             <h2>Tools:</h2>
             <ul className="pagedList">
               <li>one</li>
               <li>two</li>
               <li>three</li>
             </ul>
+          </motion.div>
         </div>
       </section>
     </div>
