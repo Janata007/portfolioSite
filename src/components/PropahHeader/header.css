@@ -1,8 +1,39 @@
 .header {
-  background-color: black;
+  background: #1b1b1b;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header nav {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 10px 20px;
-  color: white;
+}
+
+.header ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 5rem;
+}
+
+.header ul li {
+  font-size: 18px;
+  position: relative;
+}
+
+.header ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0;
+  text-align: left;
+  color: inherit;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+.header ul li a:hover {
+  color: #eae0f5ff;
 }

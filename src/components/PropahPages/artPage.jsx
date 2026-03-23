@@ -2,7 +2,7 @@ import { color, motion } from "motion/react";
 import { useRef, useState } from "react";
 import { ball, innerBall, innerBall2 } from "../../PropahUtils/constants";
 import "../../mystyle.css";
-
+  
 const variants = {
   initial: {
     y: 500,
@@ -28,13 +28,13 @@ const ArtPage = ({ section }) => {
       <section id={title}>
         <div className="content">
           <div className="leftest-div">
-            <motion.div whileHover={{ scale: 1.1 }}>
+            <motion.div whileHover={{ scale: 1.1 }} style={{ marginBottom: '2rem' }}>
               <h2>Instagram:</h2>
               <ul className="pagedList">
-                <li>@emjoey_arts</li>
+                <li>@emjey_arts</li>
               </ul>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }}>
+            <motion.div whileHover={{ scale: 1.1 }} style={{ marginBottom: '2rem' }}>
               <h2>Tools:</h2>
               <ul className="pagedList">
                 <li>Krita</li>
@@ -95,16 +95,10 @@ const ArtPage = ({ section }) => {
           </div>
         </div>
         <div className="rightest-div">
-          <motion.div whileHover={{ scale: 1.1 }}>
+          <motion.div whileHover={{ scale: 1.1 }} style={{ marginBottom: '2rem' }}>
             <h2>Commissions</h2>
             <ul className="pagedList">
               <li>open</li>
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <h2>Hotel</h2>
-            <ul className="pagedList">
-              <li>Trivago</li>
             </ul>
           </motion.div>
         </div>
