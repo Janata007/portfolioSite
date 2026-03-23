@@ -1,29 +1,19 @@
-import Page from "./components/PropahMain/homePage";
-import ArtPage from "./components/PropahPages/artPage";
-import "./mystyle.css";
-import { sections, ball } from "./PropahUtils/constants";
-import ContactPage from "./components/PropahPages/contactPage";
-import ProjectsPage from "./components/PropahPages/projectsPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/home";
+import Works from "./pages/Works";
+import ProjectPage from "./pages/projectPage";
 
-const App = () => {
+export default function App() {
   return (
-    <main>
-      <div>
-        {sections.map((section, index) => {
-          switch (section.title) {
-            case "art":
-              return <ArtPage section={section} key={index} />;
-            case "contact":
-              return <ContactPage section={section} key={index} />;
-            case "projects":
-              return <ProjectsPage section={section} key={index} />;
-            default:
-              return <Page section={section} key={index} />;
-          }
-        })}
-      </div>
-    </main>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
-};
-
-export default App;
+}
