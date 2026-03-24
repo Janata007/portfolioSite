@@ -1,4 +1,4 @@
-import { FaInstagram, FaBehance, FaLinkedin, FaFacebook, FaVoicemail, FaMailBulk } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook, FaMailBulk } from "react-icons/fa";
 
 export default function SideBar() {
   const socialLinks = [

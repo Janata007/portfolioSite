@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import SideBar  from "./sideBar";
-import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook, FaMailBulk } from "react-icons/fa";
 
 const socialLinks = [
   { icon: <FaInstagram />, url: "https://www.instagram.com/emjey_arts/" },
