@@ -174,6 +174,12 @@ img {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .works-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -236,7 +242,15 @@ img {
 .project-title {
   margin-top: 12px;
   font-size: 13px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-subtitle {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #d1d5db;
+  margin-top: 4px;
 }
 
 /* PROJECT PAGE */
@@ -269,18 +283,26 @@ img {
 }
 
 .works-grid {
-  align-items: start;
+  align-items: center;
+  gap: 60px;
 }
 
 .works-project {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: start;
+  grid-column: span 6;
+}
+
+.works-project-wide {
+  grid-column: span 12;
 }
 
 .works-project .project-image {
-  width: 90%;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 .works-project .project-image img {
@@ -289,16 +311,52 @@ img {
   object-fit: contain;
 }
 
-.works-project .project-title {
-  width: 90%;
-  max-width: 90%;
+.works-project .project-title,
+.works-project .project-subtitle {
+  width: 100%;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.works-project-large .project-image {
+  width: 88%;
+  max-width: 88%;
+}
+
+@media (max-width: 767px) {
+  .works-project,
+  .works-project-wide {
+    grid-column: span 1;
+  }
 }
 
 .works-title {
   padding: 0 5vw;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.works-description {
+  padding: 0 5vw;
+  margin-bottom: 26px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: #d1d5db;
+}
+
+.works-signature-wrap {
+  padding: 0 5vw;
+  margin-top: -8px;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.works-signature {
+  width: 72px;
+  max-width: 100%;
+  opacity: 0.9;
+  margin: 0;
 }
 /* Link sidebar */
 .social-sidebar {
@@ -323,12 +381,23 @@ img {
   transform: translateY(-3px);
 }
 
+.global-potpis-icon {
+  position: fixed;
+  left: 14px;
+  bottom: 12px;
+  width: 56px;
+  z-index: 900;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
 .footer {
+  position: relative;
   margin-top: 80px;
   padding: 28px 6vw 36px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -338,17 +407,26 @@ img {
   gap: 24px;
   font-size: 13px;
   letter-spacing: 0.1em;
+  justify-content: center;
 }
 
 .footer-social {
   display: none;
   gap: 16px;
   align-items: center;
+  position: absolute;
+  right: 6vw;
 }
 
 @media (max-width: 768px) {
   .social-sidebar {
     display: none;
+  }
+
+  .global-potpis-icon {
+    width: 46px;
+    left: 10px;
+    bottom: 10px;
   }
 
   .footer {
@@ -363,5 +441,6 @@ img {
 
   .footer-social {
     display: flex;
+    position: static;
   }
 }

@@ -15,6 +15,12 @@ export default function Layout({ children }) {
     <>
       <Header />
       <SideBar />
+      <img
+        src="/images/potpis_white.png"
+        alt=""
+        aria-hidden="true"
+        className="global-potpis-icon"
+      />
       <main>{children}</main>
       <Footer />
     </>
@@ -95,7 +101,6 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <span className="clickable" onClick={() => navigate("/")}>JANA MARKOVIKJ</span>
       <nav className="footer-nav">
         <span className="clickable" onClick={() => navigate("/works")}>WORKS</span>
         <span className="clickable" onClick={goToAbout}>ABOUT</span>
