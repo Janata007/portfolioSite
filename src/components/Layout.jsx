@@ -7,6 +7,7 @@ const socialLinks = [
   { icon: <FaInstagram />, url: "https://www.instagram.com/emjey_arts/" },
   { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/jana-markovikj-b5b5341a6/" },
   { icon: <FaFacebook />, url: "https://www.facebook.com/jana.markovic.397" },
+  { icon: <FaMailBulk />, url: "mailto:jana.markovic001@gmail.com" },
 ];
 
 export default function Layout({ children }) {
