@@ -6,16 +6,17 @@ export default function AboutMe() {
     <section className="about-me" id="about">
       <div className="about-copy">
         <h2 className="about-kicker">ABOUT ME</h2>
+        <p>Hello!</p>
         <p>
-          Hello! Am currently working as a QA Engineer with focus on automation testing
-          on a project in the insurance sector. I have a strong background in
-          testing strategy and implementation.
+          Am currently working as a <b>QA Engineer</b> with focus on automation testing
+          on a project in the insurance sector. <i>(for more details on that reach me on LinkedIn/mail)</i>
         </p>
         <p>
-          Outside that field, I looove digital and traditional art and
+          Outside that field, I looOove digital and traditional art and
           have several projects done including illustrating and writing
-          a comic (can view for free here!).
+          a comic <i>(and you can read it here!)</i>
         </p>
+        <p>Feel free to click around view my stuff</p>
       </div>
 
       <motion.div
@@ -36,20 +37,18 @@ export default function AboutMe() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/images/flowerhead11.jpg" alt="Jana Markovikj" />
+        <img src="/images/flowerhead11.jpg" alt="Flowerhead character" />
       </motion.div>
 
       <div className="about-copy">
         <h2 className="about-kicker">MY ART</h2>
         <p>
-          Okay so, this here is Flowerhead, and is one of the characters
+          This here is <b>Flowerhead</b> (also shown on top), and is one of the characters
           I've designed. My main focus is that and creating stories around
           these characters.
         </p>
         <p>
-          I friggin love manga and anime, so of course am inspired by that style.
-          Please take a look around my site and feel free to contact me on instagram
-          or facebook! 
+          For any inquiries regarding commissions, please reach out to me on Instagram or Facebook
         </p>
       </div>
     </section>

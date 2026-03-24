@@ -72,7 +72,7 @@ img {
     width: 0;
   }
   to {
-    width: 16ch;
+    width: 17ch;
   }
 }
 
@@ -117,7 +117,7 @@ img {
   bottom: 40px;
   left: 6vw;
   color: #000;
-  font-size: 32px;
+  font-size: 250x;
   font-weight: 300;
 }
 
@@ -158,8 +158,8 @@ img {
 
 .about-image-wrap img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -334,7 +334,8 @@ img {
   padding: 0 5vw;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .works-description {
@@ -357,6 +358,78 @@ img {
   max-width: 100%;
   opacity: 0.9;
   margin: 0;
+}
+
+.comic-page {
+  padding: 120px 5vw 48px;
+}
+
+.comic-title {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.comic-pages-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.comic-page-image {
+  width: 80%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  right: 5vw;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .comic-page {
+    padding-top: 110px;
+  }
+
+  .comic-page-image {
+    max-width: 100%;
+  }
+
+  .back-to-top-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    bottom: 30px;
+    right: 3vw;
+  }
 }
 /* Link sidebar */
 .social-sidebar {
@@ -381,12 +454,11 @@ img {
   transform: translateY(-3px);
 }
 
-.global-potpis-icon {
-  position: fixed;
-  left: 14px;
-  bottom: 12px;
-  width: 56px;
-  z-index: 900;
+.footer-potpis-icon {
+  position: absolute;
+  right: 6vw;
+  bottom: 10px;
+  width: 44px;
   opacity: 0.9;
   pointer-events: none;
 }
@@ -423,10 +495,10 @@ img {
     display: none;
   }
 
-  .global-potpis-icon {
-    width: 46px;
-    left: 10px;
-    bottom: 10px;
+  .footer-potpis-icon {
+    width: 36px;
+    right: 5vw;
+    bottom: 8px;
   }
 
   .footer {

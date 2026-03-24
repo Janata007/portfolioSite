@@ -15,12 +15,6 @@ export default function Layout({ children }) {
     <>
       <Header />
       <SideBar />
-      <img
-        src="/images/potpis_white.png"
-        alt=""
-        aria-hidden="true"
-        className="global-potpis-icon"
-      />
       <main>{children}</main>
       <Footer />
     </>
@@ -69,12 +63,12 @@ function Header() {
 
   return (
     <header className={`header ${isHidden ? "header-hidden" : ""}`}>
-      <span className="header-title clickable" onClick={() => navigate("/")}>JANA MARKOVIKJ</span>
+      <span className="header-title" onClick={() => navigate("/")}>JANA MARKOVIKJ</span>
 
       <nav className="nav">
         <span className="clickable" onClick={() => navigate("/works")}>WORKS</span>
         <span className="clickable" onClick={goToAbout}>ABOUT</span>
-        <span>COMIC</span>
+        <span className="clickable" onClick={() => navigate("/comic")}>COMIC</span>
       </nav>
     </header>
   );
@@ -104,7 +98,7 @@ function Footer() {
       <nav className="footer-nav">
         <span className="clickable" onClick={() => navigate("/works")}>WORKS</span>
         <span className="clickable" onClick={goToAbout}>ABOUT</span>
-        <span>COMIC</span>
+        <span className="clickable" onClick={() => navigate("/comic")}>COMIC</span>
       </nav>
       <div className="footer-social">
         {socialLinks.map((s, i) => (
@@ -119,6 +113,12 @@ function Footer() {
           </a>
         ))}
       </div>
+      <img
+        src="/images/potpis_white.png"
+        alt=""
+        aria-hidden="true"
+        className="footer-potpis-icon"
+      />
     </footer>
   );
 }

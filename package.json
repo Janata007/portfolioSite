@@ -14,7 +14,9 @@
     "tailwindcss": "^4.1.15"
   },
   "scripts": {
-    "start": "craco start"
+    "start": "craco start",
+    "build": "craco build",
+    "serve": "npx serve -s build"
   },
   "browserslist": {
     "production": [

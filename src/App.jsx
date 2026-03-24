@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/home";
 import Works from "./pages/Works";
-import ProjectPage from "./pages/projectPage";
+import ComicPage from "./pages/ComicPage";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/comic" element={<ComicPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

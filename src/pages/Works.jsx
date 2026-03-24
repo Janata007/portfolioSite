@@ -21,7 +21,7 @@ const projects = [
     subTitle: "2025",
     image: "/images/sunhead_ver1.jpg",
     description:
-      "Sunhead, one of my original characters. Inspired by egyptian art and mythology.",
+      "Sunhead, one of my original characters. Inspired by egyptian art and mythology",
   },
    {
     id: 6,
@@ -29,7 +29,7 @@ const projects = [
     subTitle: "2025",
     image: "/images/sunheadchar1.jpg",
     description:
-      "Sunhead, one of my original characters. Inspired by egyptian art and mythology.",
+      "Sunhead, one of my original characters. Inspired by egyptian art and mythology",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const projects = [
     subTitle: "2024",
     image: "/images/feit_brucoska_poster.jpg",
     description:
-      "Poster design for a college event. Used the university mascot as the main visual element.",
+      "Poster design for a college event. Used the university mascot as the main visual element",
   },
     {
     id: 6,
@@ -48,7 +48,7 @@ const projects = [
     height: 4578,
     fileSizeBytes: 1968961,
     description:
-      "Design for a t-shirt logo for college event.",
+      "Design for a t-shirt logo for college event",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const projects = [
     height: 3508,
     fileSizeBytes: 13393135,
     description:
-      "Short comic for a festival. Initially started from a character design concept.",
+      "Short comic for a festival. Initially started from a character design concept",
   },
 ];
 export default function Works() {
@@ -80,7 +80,7 @@ export default function Works() {
         transition={{ duration: 1.1 }}
       >
         Below there is a selection of some of my work from recent years. If you hover/click 
-        on the images, you can see a short description of each piece. 
+        on the images, you can see a short description of each piece
       </motion.p>
        <motion.p
         className="works-description"
@@ -88,7 +88,7 @@ export default function Works() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.1 }}
       >
-        For more of my work, please check out my Instagram or Facebook!
+        For more of my work, please check out my <i>Instagram</i> or <i>Facebook</i>
       </motion.p>
       <motion.div
         className="works-signature-wrap"

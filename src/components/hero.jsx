@@ -16,7 +16,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Personal Portfolio Site
+        - Personal Portfolio Site -
       </motion.div>
     </section>
   );
