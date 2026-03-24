@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="hero" id="about">
+    <section className="hero" id="home">
       <motion.img
-        src="./images/1000033271.jpg"
+        src="./images/flowerHead8.jpg"
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 2 }}

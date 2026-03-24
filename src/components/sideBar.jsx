@@ -1,10 +1,11 @@
-import { FaInstagram, FaBehance, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaBehance, FaLinkedin, FaFacebook, FaVoicemail, FaMailBulk } from "react-icons/fa";
 
 export default function SideBar() {
   const socialLinks = [
-    { icon: <FaInstagram />, url: "https://instagram.com" },
-    { icon: <FaBehance />, url: "https://behance.net" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/emjey_arts/" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/jana-markovikj-b5b5341a6/" },
+    { icon: <FaFacebook />, url: "https://www.facebook.com/jana.markovic.397" },
+    { icon: <FaMailBulk />, url: "mailto:jana.markovic001@gmail.com" },
   ];
 
   return (

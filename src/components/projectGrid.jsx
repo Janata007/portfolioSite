@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { id: 1, title: "Example 1", image: "/images/1000033271.jpg" },
-  { id: 2, title: "Example 2", image: "/images/1000033271.jpg" },
-  { id: 3, title: "Example 3", image: "/images/1000033271.jpg" },
-  
+  {
+    id: 1,
+    title: ".",
+    image: "/images/star2.jpg",
+    description: ".",
+  },
 ];
 
 export default function ProjectGrid() {
@@ -21,6 +23,9 @@ export default function ProjectGrid() {
         >
           <div className="project-image">
             <img src={p.image} alt={p.title} />
+            <div className="project-overlay">
+              <p>{p.description}</p>
+            </div>
           </div>
 
           <h3 className="project-title">{p.title}</h3>
