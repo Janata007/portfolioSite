@@ -26,7 +26,7 @@ export default function AboutMe() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/images/1000033271.jpg" alt="Jana Markovikj" />
+        <img src="/images/1000033276.jpg" alt="Jana Markovikj" />
       </motion.div>
     </section>
     <section className="about-me" id="about">
