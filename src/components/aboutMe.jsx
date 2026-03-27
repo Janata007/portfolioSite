@@ -26,7 +26,7 @@ export default function AboutMe() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/images/1000033276.jpg" alt="Jana Markovikj" />
+        <img src="/images/1000033276.webp" alt="Jana Markovikj" />
       </motion.div>
     </section>
     <section className="about-me" id="about">
@@ -37,7 +37,7 @@ export default function AboutMe() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/images/flowerhead11.jpg" alt="Flowerhead character" />
+        <img src="/images/flowerhead11.webp" alt="Flowerhead character" />
       </motion.div>
 
       <div className="about-copy">

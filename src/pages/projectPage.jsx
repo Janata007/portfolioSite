@@ -12,7 +12,7 @@ export default function ProjectPage() {
       </motion.h1>
 
       <div className="space-y-10">
-        {["/p1.jpg", "/p2.jpg", "/p3.jpg"].map((img, i) => (
+        {["/p1.webp", "/p2.webp", "/p3.webp"].map((img, i) => (
           <motion.img
             key={i}
             src={img}

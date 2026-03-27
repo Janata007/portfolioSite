@@ -7,23 +7,23 @@ export default function ComicPage() {
   useEffect(() => {
     // Array of all comic pages based on the actual files in comicPages folder
     const pageList = [
-      "page00.jpg", "page01.jpg", "page02.jpg", "page03.jpg", "page04.jpg",
-      "page05.jpg", "page06.jpg", "page07.jpg", "page08.jpg", "page09.jpg",
-      "page10.jpg", "page11.jpg", "page12.jpg", "page13.jpg", "page14.jpg",
-      "page17.jpg", "page18.jpg", "page19.jpg", "page20.jpg", "page21.jpg",
-      "page22.jpg", "page23.jpg", "page24.jpg", "page25.jpg", "page26.jpg",
-      "page27.jpg", "page28.jpg", "page29.jpg", "page30.jpg", "page31.jpg",
-      "page32.jpg", "page33.jpg", "page34.jpg", "page35.jpg", "page36.jpg",
-      "page37.jpg", "page38.jpg", "page39_40.jpg", "page41.jpg", "page42.jpg",
-      "page43.jpg", "page44.jpg", "page45.jpg", "page46.jpg", "page47.jpg",
-      "page48.jpg", "page49.jpg", "page50.jpg", "page51.jpg", "page52.jpg",
-      "page53.jpg", "page54.jpg", "page55.jpg", "page56.jpg", "page57.jpg",
-      "page58.jpg", "page59.jpg", "page60.jpg", "page61.jpg", "page62.jpg",
-      "page63.jpg", "page64.jpg", "page65_66.jpg", "page67.jpg", "page68.jpg",
-      "page69.jpg", "page70.jpg", "page71.jpg", "page72.jpg", "page73_74.jpg",
-      "page75.jpg", "page76.jpg", "page77.jpg", "page78.jpg", "page79_80.jpg",
-      "page81.jpg", "page82.jpg", "page83.jpg", "page84.jpg", "page85_86.jpg",
-      "page87.jpg", "page88.jpg"
+      "page00.webp", "page01.webp", "page02.webp", "page03.webp", "page04.webp",
+      "page05.webp", "page06.webp", "page07.webp", "page08.webp", "page09.webp",
+      "page10.webp", "page11.webp", "page12.webp", "page13.webp", "page14.webp",
+      "page17.webp", "page18.webp", "page19.webp", "page20.webp", "page21.webp",
+      "page22.webp", "page23.webp", "page24.webp", "page25.webp", "page26.webp",
+      "page27.webp", "page28.webp", "page29.webp", "page30.webp", "page31.webp",
+      "page32.webp", "page33.webp", "page34.webp", "page35.webp", "page36.webp",
+      "page37.webp", "page38.webp", "page39_40.webp", "page41.webp", "page42.webp",
+      "page43.webp", "page44.webp", "page45.webp", "page46.webp", "page47.webp",
+      "page48.webp", "page49.webp", "page50.webp", "page51.webp", "page52.webp",
+      "page53.webp", "page54.webp", "page55.webp", "page56.webp", "page57.webp",
+      "page58.webp", "page59.webp", "page60.webp", "page61.webp", "page62.webp",
+      "page63.webp", "page64.webp", "page65_66.webp", "page67.webp", "page68.webp",
+      "page69.webp", "page70.webp", "page71.webp", "page72.webp", "page73_74.webp",
+      "page75.webp", "page76.webp", "page77.webp", "page78.webp", "page79_80.webp",
+      "page81.webp", "page82.webp", "page83.webp", "page84.webp", "page85_86.webp",
+      "page87.webp", "page88.webp"
     ];
     setPages(pageList);
   }, []);
