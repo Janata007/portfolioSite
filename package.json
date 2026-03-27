@@ -14,7 +14,7 @@
     "tailwindcss": "^4.1.15"
   },
   "scripts": {
-    "start": "npm start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "serve": "npx serve -s build"
   },
