@@ -1,20 +1,19 @@
 # Jana Markovikj Portfolio Site
 
-Portfolio site built with React 19, React Router, Craco and Copilot.
+Portfolio site built with React 19, React Router and Copilot.
 
 ## Tech Stack
 
 - React 19
 - React Router v7
-- Craco (`@craco/craco`) with `react-scripts`
 - Tailwind/PostCSS tooling
 - Framer Motion (`motion`)
 - React Icons
 
 ## Project Scripts
 
-- `npm start` — runs development server (`craco start`)
-- `npm run build` — creates optimized production build (`craco build`)
+- `npm start` — runs development server 
+- `npm run build` — creates optimized production build
 - `npm run serve` — serves production build from `build/`
 
 ## Getting Started
@@ -31,7 +30,7 @@ npm install
 npm start
 ```
 
-3. Open the app in your browser (default CRA/Craco local URL).
+3. Open the app in your browser
 
 ## Production Build
 
