@@ -112,6 +112,19 @@ img {
   object-position: center;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: calc(100vh - 88px);
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+  }
+}
+
 .hero-text {
   position: absolute;
   bottom: 40px;
